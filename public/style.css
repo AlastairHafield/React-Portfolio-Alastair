@@ -17,6 +17,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: default;
 }
 img {
   height: 100%;
@@ -93,7 +94,7 @@ li {
 }
 #header .header {
   min-height: 8vh;
-  background-color: #2a2a2a;
+  background-image: linear-gradient(60deg, #212529 0%, #212529 100%);
   transition: 0.3s ease background-color;
 }
 #header .nav-bar {
@@ -262,6 +263,52 @@ li {
   width: 98%;
   border: 7px solid crimson;
   z-index: -1;
+}
+/*contacts section */
+
+form {
+  background-color: #9b9ea9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
 }
 /* Projects section */
 
@@ -445,6 +492,16 @@ li {
 /* End Projects section */
 
 /* contact Section */
+.container.proficiency-list a:hover h1.section-title {
+  color: crimson;
+}
+
+.container.proficiency-list a:hover h1.section-title::before {
+  content: "Download"; /* Add the "Download" text before the original text */
+  display: block;
+  font-size: 0.8em;
+}
+
 #contact .contact {
   max-width: 1200px;
   margin: 0 auto;
@@ -560,14 +617,35 @@ li {
 
 .proficiency {
   flex-basis: calc(50% - 1rem);
+  margin-bottom: 150px;
+  padding-left: 200px;
+  padding-right: 200px;
+  border-right: 50px;
+  border-left: 50px;
 }
 
 .proficiency-list {
   flex-direction: column-reverse;
   text-align: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 25 auto;
   padding: 100px 20px 50px 20px;
+  text-decoration: underline; /* Add underline to the link */
+}
+
+.container.proficiency-list a {
+  text-decoration: underline; /* Add underline to the link */
+  text-decoration-color: crimson;
+}
+
+.proficiency ol li:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff7f00,
+    0 0 70px #ff7f00, 0 0 80px #ff7f00, 0 0 100px #ff7f00;
+  cursor: default;
+}
+
+.proficiency li:hover {
+  cursor: default;
 }
 
 /* End Footer */
@@ -629,6 +707,11 @@ li {
   }
   h1.section-title {
     font-size: 6rem;
+  }
+
+  h5.section-title:hover {
+    font-size: 5rem;
+    color: crimson;
   }
 
   /* Hero */
@@ -761,6 +844,23 @@ li {
 /* End Media Query For Tablet */
 
 /* Media Query For Desktop */
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .proficiencies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .proficiency {
+    margin: 20px;
+    width: calc(50% - 40px);
+    border-right: 5px;
+    border-left: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   /* header */
 }

@@ -10,6 +10,7 @@ export default function Contact() {
   const { name, email, message } = formState;
 
   const [errorMessage, setErrorMessage] = useState("");
+  const [showMessage, setShowMessage] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -19,76 +20,76 @@ export default function Contact() {
       return;
     }
 
-    console.log(formState);
+    setShowMessage(true);
+    setFormState({ name: "", email: "", message: "" });
   }
 
   function handleChange(e) {
-    if (e.target.name === "email") {
-      const isValid = validateEmail(e.target.value);
+    const { name, value } = e.target;
+    let error = "";
+
+    if (name === "email") {
+      const isValid = validateEmail(value);
       if (!isValid) {
-        setErrorMessage("Your email is invalid.");
-      } else {
-        setErrorMessage("");
+        error = "Your email is invalid.";
       }
     } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage("");
+      if (!value.trim()) {
+        error = `${name} is required.`;
       }
     }
 
-    if (e.target.name === "name") {
-      setFormState({ ...formState, name: e.target.value });
-    }
-
-    if (e.target.name === "email") {
-      setFormState({ ...formState, email: e.target.value });
-    }
-
-    if (e.target.name === "message") {
-      setFormState({ ...formState, message: e.target.value });
-    }
+    setErrorMessage(error);
+    setFormState({ ...formState, [name]: value });
   }
 
   return (
     <section className="container">
-      <h1>Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      {showMessage ? (
         <div>
-          <label>Name:</label>
-          <input
-            type="text"
-            defaultValue={name}
-            onBlur={handleChange}
-            name="name"
-          />
+          <p>Thank you for your message!</p>
         </div>
-        <div>
-          <label>Email address:</label>
-          <input
-            type="email"
-            defaultValue={email}
-            name="email"
-            onBlur={handleChange}
-          />
-        </div>
-        <div>
-          <label>Message:</label>
-          <textarea
-            name="message"
-            defaultValue={message}
-            onBlur={handleChange}
-            rows="5"
-          />
-        </div>
-        {errorMessage && (
+      ) : (
+        <form id="contact-form" onSubmit={handleSubmit}>
+          <h1>Contact me</h1>
           <div>
-            <p className="error-text">{errorMessage}</p>
+            <label>Name:</label>
+            <input
+              type="text"
+              value={name}
+              onChange={handleChange}
+              onBlur={handleChange}
+              name="name"
+            />
           </div>
-        )}
-        <button type="submit">Submit</button>
-      </form>
+          <div>
+            <label>Email address:</label>
+            <input
+              type="email"
+              value={email}
+              name="email"
+              onChange={handleChange}
+              onBlur={handleChange}
+            />
+          </div>
+          <div>
+            <label>Message:</label>
+            <textarea
+              name="message"
+              value={message}
+              onChange={handleChange}
+              onBlur={handleChange}
+              rows="5"
+            />
+          </div>
+          {errorMessage && (
+            <div>
+              <p className="error-text">{errorMessage}</p>
+            </div>
+          )}
+          <button type="submit">Submit</button>
+        </form>
+      )}
     </section>
   );
 }
