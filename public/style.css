@@ -32,6 +32,15 @@ p {
   letter-spacing: 0.05rem;
 }
 
+li {
+  color: black;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+}
+
 #header .nav-list ul li a {
   font-size: 2.5rem;
 }
@@ -148,7 +157,7 @@ p {
 
 /* Hero Section */
 #hero {
-  background-image: url(https://www.kapwing.com/videos/6428f7b18b472500176ce148);
+  background-image: url(./img/header-code.jpg);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -243,7 +252,6 @@ p {
   height: 100%;
   width: 100%;
   position: relative;
-  border: 10px solid white;
 }
 #about .col-left .about-img::after {
   content: "";
@@ -252,6 +260,7 @@ p {
   top: 19px;
   height: 98%;
   width: 98%;
+  border: 7px solid crimson;
   z-index: -1;
 }
 /* Projects section */
@@ -300,8 +309,7 @@ p {
   width: 65%;
   overflow: hidden;
   border-radius: 10px;
-  background-image: linear-gradient(60deg, #29323c 30%, #485563 70%);
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 20px auto;
 }
 
@@ -314,8 +322,7 @@ p {
   margin: 40px;
   overflow: hidden;
   border-radius: 10px;
-  background-image: linear-gradient(60deg, #29323c 30%, #485563 70%);
-  color: white;
+  color: rgb(0, 0, 0);
   width: 30%;
 }
 #projects .project-studentbio {
@@ -327,8 +334,7 @@ p {
   margin: 40px;
   overflow: hidden;
   border-radius: 10px;
-  background-image: linear-gradient(60deg, #29323c 30%, #485563 70%);
-  color: white;
+  color: rgb(1, 0, 0);
   width: 30%;
 }
 
@@ -352,36 +358,26 @@ p {
   align-items: flex-start;
   justify-content: left;
   border-radius: 5px;
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
 }
 
 #projects .project-img2 img {
   display: flex;
   flex-basis: 50%;
-  height: 250px;
-  width: 500px;
   overflow: hidden;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   margin-bottom: 5px;
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
 }
 
 #projects .project-img3 img {
   display: flex;
   flex-basis: 50%;
-  height: 250px;
-  width: 500px;
   overflow: hidden;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
   margin-bottom: 5px;
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
 }
 
 #projects .projects-studyguide h1 {
@@ -423,7 +419,7 @@ p {
 #projects .project-horiseon p {
   align-items: flex-start;
   justify-content: center;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 #projects .project-studyguide p {
@@ -433,16 +429,17 @@ p {
   margin: 2px;
   margin-left: 30px;
   margin-right: 29px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
-#projects .project-studentbio p {
+#projects .project-studyguide p {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   margin: 2px;
-  margin-right: 5px;
-  color: white;
+  margin-left: 30px;
+  margin-right: 29px;
+  color: rgb(0, 0, 0);
 }
 
 /* End Projects section */
@@ -496,7 +493,7 @@ p {
 
 /* Footer */
 #footer {
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-image: linear-gradient(60deg, #212529 0%, #212529 100%);
 }
 #footer .footer {
   min-height: 200px;
@@ -535,9 +532,52 @@ p {
   color: white;
   font-size: 1.3rem;
 }
+
+.proficiencies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.proficiency ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: crimson;
+}
+
+.proficiency li {
+  flex-basis: calc(50% - 0.5rem);
+  text-align: center;
+  color: crimson;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.proficiency {
+  flex-basis: calc(50% - 1rem);
+}
+
+.proficiency-list {
+  flex-direction: column-reverse;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 50px 20px;
+}
+
 /* End Footer */
 
 /* Keyframes */
+@media screen and (max-width: 768px) {
+  .proficiency {
+    flex-basis: 100%;
+  }
+}
 
 @keyframes text_reveal_box {
   50% {

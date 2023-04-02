@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <section id="hero">
-        <div class="hero container">
+        <div className="hero container">
           <div>
             <h1>
               Hello, <span></span>
@@ -19,17 +19,14 @@ export default function Home() {
         </div>
       </section>
       <section id="about">
-        <div class="about container">
-          <div class="col-left">
-            <div class="about-img">
-              <img
-                src="https://cdn-useast1.kapwing.com/video_image-vypU5V4EU.jpeg"
-                alt="ImageOfMe"
-              />
+        <div className="about container">
+          <div className="col-left">
+            <div className="about-img">
+              <img src={require("./assets/img/meImg.jpeg")} alt="ImageOfMe" />
             </div>
           </div>
-          <div class="col-right">
-            <h1 class="section-title">
+          <div className="col-right">
+            <h1 className="section-title">
               About <span>me</span>
             </h1>
             <h2>Full-Stack Developer</h2>
