@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/AlastairHafield/React-Portfolio-Alastair/static/css/main.c2cab247.css",
-    "main.js": "/AlastairHafield/React-Portfolio-Alastair/static/js/main.5c3a7af6.js",
-    "static/media/Animal.png": "/AlastairHafield/React-Portfolio-Alastair/static/media/Animal.46478d9bca8f7515dd91.png",
-    "static/media/meImg.jpeg": "/AlastairHafield/React-Portfolio-Alastair/static/media/meImg.6d379e7103bebe69008c.jpeg",
-    "static/media/studdyBuddy.png": "/AlastairHafield/React-Portfolio-Alastair/static/media/studdyBuddy.54db3c1d99345ec487e2.png",
-    "static/media/stackOverflow.png": "/AlastairHafield/React-Portfolio-Alastair/static/media/stackOverflow.69f51f8d32522c0d6da8.png",
-    "static/media/dailyPlanner.png": "/AlastairHafield/React-Portfolio-Alastair/static/media/dailyPlanner.218346ef0371c153d6f6.png",
-    "static/media/GitHub-Logo.png": "/AlastairHafield/React-Portfolio-Alastair/static/media/GitHub-Logo.184b7103031fc9b16ddd.png",
-    "static/media/linked-in.png": "/AlastairHafield/React-Portfolio-Alastair/static/media/linked-in.21f0f51082c5d7b5bffc.png",
-    "static/media/noteTaker.png": "/AlastairHafield/React-Portfolio-Alastair/static/media/noteTaker.7d7e255f0420219e32b5.png",
-    "index.html": "/AlastairHafield/React-Portfolio-Alastair/index.html",
-    "main.c2cab247.css.map": "/AlastairHafield/React-Portfolio-Alastair/static/css/main.c2cab247.css.map",
-    "main.5c3a7af6.js.map": "/AlastairHafield/React-Portfolio-Alastair/static/js/main.5c3a7af6.js.map"
+    "main.css": "/React-Portfolio-Alastair/static/css/main.c2cab247.css",
+    "main.js": "/React-Portfolio-Alastair/static/js/main.9fe4bb06.js",
+    "static/media/Animal.png": "/React-Portfolio-Alastair/static/media/Animal.46478d9bca8f7515dd91.png",
+    "static/media/meImg.jpeg": "/React-Portfolio-Alastair/static/media/meImg.6d379e7103bebe69008c.jpeg",
+    "static/media/studdyBuddy.png": "/React-Portfolio-Alastair/static/media/studdyBuddy.54db3c1d99345ec487e2.png",
+    "static/media/stackOverflow.png": "/React-Portfolio-Alastair/static/media/stackOverflow.69f51f8d32522c0d6da8.png",
+    "static/media/dailyPlanner.png": "/React-Portfolio-Alastair/static/media/dailyPlanner.218346ef0371c153d6f6.png",
+    "static/media/GitHub-Logo.png": "/React-Portfolio-Alastair/static/media/GitHub-Logo.184b7103031fc9b16ddd.png",
+    "static/media/linked-in.png": "/React-Portfolio-Alastair/static/media/linked-in.21f0f51082c5d7b5bffc.png",
+    "static/media/noteTaker.png": "/React-Portfolio-Alastair/static/media/noteTaker.7d7e255f0420219e32b5.png",
+    "index.html": "/React-Portfolio-Alastair/index.html",
+    "main.c2cab247.css.map": "/React-Portfolio-Alastair/static/css/main.c2cab247.css.map",
+    "main.9fe4bb06.js.map": "/React-Portfolio-Alastair/static/js/main.9fe4bb06.js.map"
   },
   "entrypoints": [
     "static/css/main.c2cab247.css",
-    "static/js/main.5c3a7af6.js"
+    "static/js/main.9fe4bb06.js"
   ]
 }
