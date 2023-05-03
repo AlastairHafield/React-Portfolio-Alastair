@@ -8,10 +8,10 @@ export default function About() {
       </h1>
       <div className="project-horiseon">
         <h1>Project 1</h1>
-        <h2>Animl.</h2>
+        <h2>RecipeForSuccess</h2>
         <p>
-          This project was undertaken as a group collaboration, designed for
-          animal lovers!
+          This project was undertaken as a group collaboration, as a recipe
+          platform designed for affiliate grocery sales.
         </p>
         <a
           className="project-img1"
@@ -19,7 +19,7 @@ export default function About() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={require("./assets/img/Animal.png")} alt="img" />
+          <img src={require("./assets/img/recipe.png")} alt="img" />
         </a>
       </div>
       <div className="projects-container2">
@@ -44,19 +44,18 @@ export default function About() {
         <div className="project-studyguide">
           <h1>Project 2:</h1>
 
-          <h2>Note Taker!</h2>
+          <h2>Animl.</h2>
           <p>
-            Note Taker is an application for you to add, edit or delete any
-            notes you see fit. Please try this out to help you keep track of
-            your day to day tasks!
+            This project was undertaken as a group collaboration, designed for
+            animal lovers!
           </p>
           <a
-            className="project-img2"
-            href="https://notetakeralastair.herokuapp.com/"
+            className="project-img1"
+            href="https://alastairhafield.github.io/Animl-Project/home.html"
             target="_blank"
             rel="noreferrer"
           >
-            <img src={require("./assets/img/noteTaker.png")} alt="img" />
+            <img src={require("./assets/img/Animal.png")} alt="img" />
           </a>
         </div>
         <div className="project-studyguide">
