@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/React-Portfolio-Alastair/static/css/main.c2cab247.css",
-    "main.js": "/React-Portfolio-Alastair/static/js/main.c8ed6f3f.js",
-    "static/media/Animal.png": "/React-Portfolio-Alastair/static/media/Animal.46478d9bca8f7515dd91.png",
+    "main.js": "/React-Portfolio-Alastair/static/js/main.a09da359.js",
     "static/media/meImg.jpeg": "/React-Portfolio-Alastair/static/media/meImg.6d379e7103bebe69008c.jpeg",
     "static/media/recipe.png": "/React-Portfolio-Alastair/static/media/recipe.e0c0958c8a49db6fef56.png",
+    "static/media/animal-laptop.png": "/React-Portfolio-Alastair/static/media/animal-laptop.8363d4811b55ea54f492.png",
     "static/media/studdyBuddy.png": "/React-Portfolio-Alastair/static/media/studdyBuddy.54db3c1d99345ec487e2.png",
     "static/media/stackOverflow.png": "/React-Portfolio-Alastair/static/media/stackOverflow.69f51f8d32522c0d6da8.png",
     "static/media/dailyPlanner.png": "/React-Portfolio-Alastair/static/media/dailyPlanner.218346ef0371c153d6f6.png",
@@ -12,10 +12,10 @@
     "static/media/linked-in.png": "/React-Portfolio-Alastair/static/media/linked-in.21f0f51082c5d7b5bffc.png",
     "index.html": "/React-Portfolio-Alastair/index.html",
     "main.c2cab247.css.map": "/React-Portfolio-Alastair/static/css/main.c2cab247.css.map",
-    "main.c8ed6f3f.js.map": "/React-Portfolio-Alastair/static/js/main.c8ed6f3f.js.map"
+    "main.a09da359.js.map": "/React-Portfolio-Alastair/static/js/main.a09da359.js.map"
   },
   "entrypoints": [
     "static/css/main.c2cab247.css",
-    "static/js/main.c8ed6f3f.js"
+    "static/js/main.a09da359.js"
   ]
 }
